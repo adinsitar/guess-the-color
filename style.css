@@ -1,0 +1,389 @@
+.title {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3.3rem;
+}
+
+.word-1 {
+  color: red;
+}
+
+.word-2 {
+  color: rgb(73, 240, 73);
+}
+
+.word-3 {
+  color: rgb(27, 69, 255);
+}
+
+.current-color {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-row-gap: 1rem;
+}
+
+#color1 {
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  justify-self: end;
+  color: white;
+}
+
+#color2 {
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  color: white;
+}
+#color3 {
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  justify-self: start;
+  color: white;
+}
+#color4 {
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  justify-self: end;
+  color: white;
+}
+#color5 {
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  color: white;
+}
+#color6 {
+  height: 6rem;
+  width: 6rem;
+  background-color: black;
+  justify-self: start;
+  color: white;
+}
+
+.color:hover {
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  padding-top: 1.7rem;
+}
+
+.start-btn {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 1rem;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.start-btn:hover {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+}
+
+.letter-r {
+  color: red;
+}
+
+.letter-g {
+  color: rgb(0, 212, 0);
+}
+
+.letter-b {
+  color: rgb(27, 69, 255);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.973);
+  transition: all 0.4s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  border-radius: 4px;
+  position: relative;
+  width: 30%;
+  height: 25%;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  align-content: center;
+  font-size: 1.3rem;
+}
+
+.next-btn {
+  border: 0;
+  padding: 1rem;
+  background-color: rgb(27, 69, 255);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.next-btn:hover {
+  cursor: pointer;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-wrong {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, 0.973);
+  /* transition: all 0.4s; */
+}
+
+.modal-wrong:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal_content {
+  border-radius: 4px;
+  position: relative;
+  width: 30%;
+  height: 25%;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  align-content: center;
+  font-size: 1.3rem;
+}
+
+.try_again-btn {
+  border: 0;
+  padding: 1rem;
+  background-color: rgb(27, 69, 255);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.try_again-btn:hover {
+  cursor: pointer;
+}
+
+.wrong {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .word-1 {
+    color: red;
+  }
+
+  .word-2 {
+    color: rgb(73, 240, 73);
+  }
+
+  .word-3 {
+    color: rgb(27, 69, 255);
+  }
+
+  .current-color {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .colors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap: 1.7rem;
+    grid-column-gap: 2rem;
+  }
+
+  #color1 {
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    justify-self: end;
+  }
+
+  #color2 {
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    justify-self: start;
+  }
+  #color3 {
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    justify-self: end;
+  }
+  #color4 {
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    justify-self: start;
+  }
+  #color5 {
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    justify-self: end;
+  }
+  #color6 {
+    height: 6rem;
+    width: 6rem;
+    background-color: black;
+    justify-self: start;
+  }
+
+  .start-btn {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  .start-btn:hover {
+    background-color: red;
+    cursor: pointer;
+    color: white;
+  }
+
+  .modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(77, 77, 77, 0.973);
+  }
+
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal__content {
+    border-radius: 4px;
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+    background: #fff;
+    padding: 1em 2em;
+    text-align: center;
+    align-content: center;
+    font-size: 1.1rem;
+  }
+
+  .next-btn {
+    border: 0;
+    padding: 1rem;
+    background-color: rgb(27, 69, 255);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .next-btn:hover {
+    cursor: pointer;
+  }
+
+  .score {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-wrong {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(77, 77, 77, 0.973);
+  }
+
+  .modal-wrong:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal_content {
+    border-radius: 4px;
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+    text-align: center;
+    align-content: center;
+    font-size: 1.3rem;
+  }
+
+  .try_again-btn {
+    border: 0;
+    padding: 1rem;
+    background-color: rgb(27, 69, 255);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .try_again-btn:hover {
+    cursor: pointer;
+  }
+
+  .wrong {
+    color: black;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
